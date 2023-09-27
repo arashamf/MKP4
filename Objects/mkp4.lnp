@@ -1,0 +1,22 @@
+--cpu Cortex-M1
+".\objects\main.o"
+".\objects\pins.o"
+".\objects\uart_func.o"
+".\objects\xtick.o"
+".\objects\mdr1986ve1t_it.o"
+".\objects\mil1553b_rt.o"
+".\objects\startup_mdr32f1qi.o"
+".\objects\system_mdr32f1qi.o"
+".\objects\mdr32fxqi_asm.o"
+".\objects\mdr32fxqi_eeprom.o"
+".\objects\mdr32fxqi_iwdg.o"
+".\objects\mdr32fxqi_mil_std_1553.o"
+".\objects\mdr32fxqi_port.o"
+".\objects\mdr32fxqi_rst_clk.o"
+".\objects\mdr32fxqi_timer.o"
+".\objects\mdr32fxqi_uart.o"
+".\objects\mdr32fxqi_utils.o"
+--strict --scatter ".\RTE\Device\MDR32F1QI\MDR32F1QI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\mkp4.map" -o .\Objects\mkp4.axf

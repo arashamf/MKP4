@@ -1,0 +1,10 @@
+.\objects\system_mdr32f1qi.o: RTE\Device\MDR32F1QI\system_MDR32F1QI.c
+.\objects\system_mdr32f1qi.o: C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc\MDR32F1QI.h
+.\objects\system_mdr32f1qi.o: .\RTE\Device\MDR32F1QI\MDR32FxQI_config.h
+.\objects\system_mdr32f1qi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_mdr32f1qi.o: .\RTE\_mkp4\RTE_Components.h
+.\objects\system_mdr32f1qi.o: C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc\MDR32F1QI.h
+.\objects\system_mdr32f1qi.o: C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1\core_cm1.h
+.\objects\system_mdr32f1qi.o: C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1\core_cmInstr.h
+.\objects\system_mdr32f1qi.o: C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1\core_cmFunc.h
+.\objects\system_mdr32f1qi.o: .\RTE\Device\MDR32F1QI\system_MDR32F1QI.h

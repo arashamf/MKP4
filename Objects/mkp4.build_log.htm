@@ -1,0 +1,127 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Aleksei Skupov, NIICHASPROM, LIC=X1E4T-RITMK-YDGK5-GZ4W4-2UWXS-W94Y2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\DOCS\STM32_works\mkp4\mkp4.uvprojx
+Project File Date:  09/26/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'mkp4'
+compiling main.c...
+core\src\main.c(21): warning:  #177-D: function "InitWatchDog"  was declared but never referenced
+  static void InitWatchDog(void);
+core\src\main.c: 1 warning, 0 errors
+compiling uart_func.c...
+core\src\uart_func.c(56): warning:  #177-D: function "UART_InitIRQ"  was declared but never referenced
+  static void UART_InitIRQ(IRQn_Type IRQn, uint32_t priority)
+core\src\uart_func.c(64): warning:  #177-D: function "UARTSetBaud"  was declared but never referenced
+  static void UARTSetBaud(MDR_UART_TypeDef* UARTx, uint32_t baudRate, uint32_t freqCPU)
+core\src\uart_func.c: 2 warnings, 0 errors
+compiling pins.c...
+core\src\pins.c(74): warning:  #188-D: enumerated type mixed with another type
+  		addr |= ( (!PORT_ReadInputDataBit(adr_pins[count].PORTx, adr_pins[count].PORT_Pin )) << count); 
+core\src\pins.c(118): warning:  #188-D: enumerated type mixed with another type
+  		if ((PORT_ReadInputDataBit(check_pins[count].PORTx, check_pins[count].PORT_Pin )) == SET) //åñëè íà ïðîâåðÿåìîì êàíàëå îòñóòñòâóåò íàïðÿæåíèå
+core\src\pins.c: 2 warnings, 0 errors
+compiling MIL1553B_RT.c...
+linking...
+.\RTE\Device\MDR32F1QI\MDR32F1QI.sct(16): warning: L6329W: Pattern *.o(EXECUTABLE_MEMORY_SECTION) only matches removed unused sections.
+Program Size: Code=6028 RO-data=328 RW-data=44 ZI-data=8356  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+After Build - User command #2: cmd /c copy .\Obj\*.hex .
+‘¨áâ¥¬¥ ­¥ ã¤ ¥âáï ­ ©â¨ ãª § ­­ë© ¯ãâì.
+".\Objects\mkp4.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Milandr
+                https://ic.milandr.ru/soft/Milandr.MDR32FxQI.1.1.pack
+                Milandr.MDR32FxQI.1.1
+                Milandr MDR32FxQI Series Device Support, Drivers and Examples
+   * Component: Startup Variant: 1. Rev.6+ Version: 2.1.0i
+   * Component: EEPROM Version: 2.1.0i
+   * Component: IWDG Version: 2.0.3i
+   * Component: MIL_STD_1553 Version: 2.0.3i
+   * Component: PORT Version: 2.0.3i
+   * Component: RST_CLK Version: 2.0.3i
+   * Component: TIMER Version: 2.1.0i
+   * Component: UART Version: 2.1.0i
+   * Component: UTILS Version: 1.0.0i
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MDR32F1QI
+  .\RTE\_mkp4
+  C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1
+  C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc
+  C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Milandr::Device:Startup:1. Rev.6+:2.1.0i
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\startup\arm\startup_MDR32F1QI.S
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\startup\system_MDR32F1QI.c
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\startup\system_MDR32F1QI.h
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc\MDR32F1QI.h
+      Include file:  Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1\core_cm1.h
+      Include file:  Libraries\SPL\MDR32FxQI\MDR32FxQI_config.h
+      Include file:  Libraries\SPL\MDR32FxQI\inc\IRQ_Handler_Template\MDR32F1QI_IT.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\IRQ_Handler_Template\MDR32F1QI_IT.c
+
+   * Component: Milandr::Drivers:EEPROM:2.1.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_eeprom.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_eeprom.c
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_asm.S
+
+   * Component: Milandr::Drivers:IWDG:2.0.3i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_iwdg.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_iwdg.c
+
+   * Component: Milandr::Drivers:MIL_STD_1553:2.0.3i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_mil_std_1553.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_mil_std_1553.c
+
+   * Component: Milandr::Drivers:PORT:2.0.3i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_port.c
+
+   * Component: Milandr::Drivers:RST_CLK:2.0.3i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_rst_clk.c
+
+   * Component: Milandr::Drivers:TIMER:2.1.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_timer.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_timer.c
+
+   * Component: Milandr::Drivers:UART:2.1.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_uart.c
+
+   * Component: Milandr::Drivers:UTILS:1.0.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_utils.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_utils.c
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_asm.S
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
