@@ -159,6 +159,6 @@ static void InitLED_Pin( const TPortPin *PortPin )
 //---------------------------инициализация пинов управления светодиодом---------------------------//
 void InitBiLED( const TBiLED *pBiLed )  
 {
-	InitLED_Pin( &pBiLed->Red );
+	InitLED_Pin( &pBiLed->Green );
 }
 //-----------------------------------------------------------------------------------------------//

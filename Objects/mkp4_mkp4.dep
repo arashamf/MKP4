@@ -1,6 +1,6 @@
 Dependencies for Project 'mkp4', Target 'mkp4': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\core\src\main.c)(0x65141913)(-c --cpu Cortex-M1 -g -O0 --apcs=interwork --split_sections -I .\core\inc -I .\core\src -I .\PT --diag_suppress=47-I.\RTE\Device\MDR32F1QI-I.\RTE\_mkp4-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\core\src\main.c)(0x651443A4)(-c --cpu Cortex-M1 -g -O0 --apcs=interwork --split_sections -I .\core\inc -I .\core\src -I .\PT --diag_suppress=47-I.\RTE\Device\MDR32F1QI-I.\RTE\_mkp4-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\core\inc\main.h)(0x6514191B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60255BB4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60255BB4)
@@ -23,12 +23,12 @@ I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libra
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_eeprom.h)(0x64A7D3C6)
 I (.\core\inc\HW_Profile.h)(0x651288F0)
 I (.\core\inc\typedef.h)(0x6513EF34)
-I (.\core\inc\pins.h)(0x65141810)
+I (.\core\inc\pins.h)(0x65141A6C)
 I (.\core\inc\uart_func.h)(0x651419A9)
 I (.\core\inc\XTick.h)(0x6503109C)
 I (.\core\inc\MIL1553B_RT.h)(0x60E70F67)
 I (.\core\inc\MDR1986VE1T_IT.h)(0x51D561C6)
-F (.\core\src\pins.c)(0x651417AF)(-c --cpu Cortex-M1 -g -O0 --apcs=interwork --split_sections -I .\core\inc -I .\core\src -I .\PT --diag_suppress=47-I.\RTE\Device\MDR32F1QI-I.\RTE\_mkp4-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\pins.o --omf_browse .\objects\pins.crf --depend .\objects\pins.d)
+F (.\core\src\pins.c)(0x651443D8)(-c --cpu Cortex-M1 -g -O0 --apcs=interwork --split_sections -I .\core\inc -I .\core\src -I .\PT --diag_suppress=47-I.\RTE\Device\MDR32F1QI-I.\RTE\_mkp4-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\pins.o --omf_browse .\objects\pins.crf --depend .\objects\pins.d)
 I (.\core\inc\main.h)(0x6514191B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60255BB4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60255BB4)
@@ -49,7 +49,7 @@ I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libra
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x64A7D3C6)
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x64A7D3C6)
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_eeprom.h)(0x64A7D3C6)
-I (.\core\inc\pins.h)(0x65141810)
+I (.\core\inc\pins.h)(0x65141A6C)
 I (.\core\inc\HW_Profile.h)(0x651288F0)
 I (.\core\inc\uart_func.h)(0x651419A9)
 I (.\core\inc\XTick.h)(0x6503109C)
@@ -122,7 +122,7 @@ I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libra
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x64A7D3C6)
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_eeprom.h)(0x64A7D3C6)
 I (.\core\inc\MDR1986VE1T_IT.h)(0x51D561C6)
-F (.\core\src\MIL1553B_RT.c)(0x6512CA1D)(-c --cpu Cortex-M1 -g -O0 --apcs=interwork --split_sections -I .\core\inc -I .\core\src -I .\PT --diag_suppress=47-I.\RTE\Device\MDR32F1QI-I.\RTE\_mkp4-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\mil1553b_rt.o --omf_browse .\objects\mil1553b_rt.crf --depend .\objects\mil1553b_rt.d)
+F (.\core\src\MIL1553B_RT.c)(0x65143FD2)(-c --cpu Cortex-M1 -g -O0 --apcs=interwork --split_sections -I .\core\inc -I .\core\src -I .\PT --diag_suppress=47-I.\RTE\Device\MDR32F1QI-I.\RTE\_mkp4-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM1-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F1QI\inc-IC:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\mil1553b_rt.o --omf_browse .\objects\mil1553b_rt.crf --depend .\objects\mil1553b_rt.d)
 I (.\core\inc\main.h)(0x6514191B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60255BB4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60255BB4)
@@ -143,7 +143,7 @@ I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libra
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x64A7D3C6)
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x64A7D3C6)
 I (C:\Users\ASkupov.CHASPROM\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.1\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_eeprom.h)(0x64A7D3C6)
-I (.\core\inc\pins.h)(0x65141810)
+I (.\core\inc\pins.h)(0x65141A6C)
 I (.\core\inc\HW_Profile.h)(0x651288F0)
 I (.\core\inc\uart_func.h)(0x651419A9)
 I (.\core\inc\typedef.h)(0x6513EF34)
