@@ -90,7 +90,7 @@ void Pins_CheckVoltage_Init(void)
 	uint8_t count = 0;
 	
 	PORT_InitTypeDef sPort;
-	RST_CLK_PCLKcmd(CHECK_PIN_CLOCK, ENABLE);
+	RST_CLK_PCLKcmd	(CHECK_VOLTAGE_PIN_CLOCK, ENABLE);
 	PORT_StructInit( &sPort );
 	
 	sPort.PORT_OE    = PORT_OE_IN; //режим - вход
@@ -104,7 +104,7 @@ void Pins_CheckVoltage_Init(void)
 		PORT_Init( check_pins[count].PORTx, &sPort );
 	}
 	
-	MKP4_channel_status.flags = 0; //инициализацтя структуры с флагами проверяемых каналов
+	MKP4_channel_status.flags = 0; //инициализация структуры с флагами проверяемых каналов
 }
 
 //---------------------------проверка каналов питания МЩП---------------------------//
