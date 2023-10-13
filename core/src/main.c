@@ -55,7 +55,6 @@ int main( void )
 	//Get_Module_Address();
 	Pins_CheckVoltage_Init();
 	
-	g_MyDeviceInfo.DeviceType = 0x10; //установка типа прибора для ответного сообщения к КШ MIL1553
 	InitMIL1553B_RT();
 	#ifdef __USE_IWDG
 		InitWatchDog(); //инициализация сторожевого таймера
@@ -63,11 +62,14 @@ int main( void )
 	
 while(1)
 	{
-
+	
 		TOOGLE_LED_GREEN();
-		sprintf (DBG_buffer, "ch=%x, status=%x\r\n", Check_Voltage(), g_MyDeviceInfo.DeviceState);
-		DBG_PutString (DBG_buffer);	
-		DelayMs(1000);
+		Check_Voltage();
+		#ifdef __USE_DBG
+			sprintf (DBG_buffer, "status=%x\r\n",g_MyDeviceInfo.DeviceState);
+			DBG_PutString (DBG_buffer);	
+			DelayMs(500);
+		#endif	
 		
 		#ifdef __USE_IWDG	
 			IWDG_ReloadCounter(); //перезагрузка сторожевого таймера

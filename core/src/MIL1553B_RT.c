@@ -148,8 +148,6 @@ static void InitRxMIL1553B	(MDR_MIL_STD_1553_TypeDef * ptr_MDR_MIL1553b )
 			return;
 	}
 
-
-
 	MIL_STD_1553_Cmd( ptr_MDR_MIL1553b, ENABLE ); //Enable MIL_STD_15531 peripheral
 }
 
@@ -158,6 +156,7 @@ void InitMIL1553B_RT( void )
 {
 	MDR_MIL_STD_15531->StatusWord1 = 0;	//инициализация Ответного Слова (ОС)
 	MDR_MIL_STD_15531->ModeData = 0; //инициализация Слова Данных (СД)
+	g_MyDeviceInfo.DeviceType = 0x10; //установка типа прибора для ответного сообщения к КШ MIL1553
 	
 	if ((g_MyRTAddress = Get_Module_Address()) == -1) //получение адреса платы
 	{g_MyRTAddress = 0x3;} //если кросс-плата не установлена

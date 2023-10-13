@@ -12,12 +12,12 @@ static void InitLED_Pin( const TPortPin *PortPin );
 	
 const TPortPin check_pins[] = 
 {
-//	{CHANNEL1_27V_PORT, 	PIN_CHANNEL1_27V },
-//	{CHANNEL2_27V_PORT, 	PIN_CHANNEL2_27V },
+	{CHANNEL1_220V_PORT, 	PIN_CHANNEL1_220V},
+	{CHANNEL2_220V_PORT, 	PIN_CHANNEL2_220V},
+	{CHANNEL1_27V_PORT, 	PIN_CHANNEL1_27V },
+	{CHANNEL2_27V_PORT, 	PIN_CHANNEL2_27V },
 	{CHANNEL3_27V_PORT, 	PIN_CHANNEL3_27V },
 	{CHANNEL4_27V_PORT,	 	PIN_CHANNEL4_27V },
-	{CHANNEL1_220V_PORT, 	PIN_CHANNEL1_220V},
-//	{CHANNEL2_220V_PORT, 	PIN_CHANNEL2_220V}
 };
 
 
@@ -112,6 +112,7 @@ uint8_t Check_Voltage(void)
 {
 	auto uint8_t count = 0;	
 	auto uint8_t buf_error = 0;	
+	auto uint8_t channel_error = 0;
 	MKP4_channel_status.flags = NO_ERROR; //сброс флагов проверяемых каналов
 	
 	for(count = 0 ; count < number_check_pins; count++ )//проверка всех каналов
@@ -128,13 +129,43 @@ uint8_t Check_Voltage(void)
 		{
 			if ((MKP4_channel_status.flags & (0x1 << count)) == (0x1 << count)) //если на проверяемом канале отсутствует напряжение
 			{
-				buf_error = (count+1);  //сохранение номера первого найденного неисправного канала 
-				break; 									//и выход из цикла
+				channel_error = (0x1 << count);  	//сохранение номера первого найденного неисправного канала 
+				break; 												//и выход из цикла
 			}
 		}
 	}	
 	
-	g_MyDeviceInfo.DeviceState = buf_error;
+	switch (channel_error)
+	{
+		case CH1_220V_ERROR: 
+			buf_error = 0x08;
+			break;
+		
+		case CH2_220V_ERROR: 
+			buf_error = 0x01;
+			break;
+		
+		case CH1_27V_ERROR:
+			buf_error = 0x09;
+			break;
+		
+		case CH2_27V_ERROR:
+			buf_error = 0x0A;
+			break;
+		
+		case CH3_27V_ERROR:
+			buf_error = 0x05;
+			break;
+		
+		case CH4_27V_ERROR:
+			buf_error = 0x06;
+			break;
+		
+		default:
+			buf_error = NO_ERROR;
+			break;		
+	}
+	g_MyDeviceInfo.DeviceState = buf_error; //сохранение ошибки
 	
 	return MKP4_channel_status.flags;
 }

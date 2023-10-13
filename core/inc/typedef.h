@@ -25,24 +25,24 @@ extern TMyDeviceInfo g_MyDeviceInfo;
 typedef enum  
 {
 	NO_ERROR = 0x0,
-  CH1_27V_ERROR 	= 0x001,
-	CH2_27V_ERROR 	= 0x002,
-	CH3_27V_ERROR 	= 0x004,
-  CH4_27V_ERROR 	= 0x008,
-	CH1_220V_ERROR 	= 0x010,
-	CH2_220V_ERROR	= 0x020,
-} channel_status;
+	CH1_220V_ERROR  = 0x001,
+	CH2_220V_ERROR  = 0x002,
+  CH1_27V_ERROR 	= 0x004,
+	CH2_27V_ERROR 	= 0x008,
+	CH3_27V_ERROR 	= 0x010,
+  CH4_27V_ERROR 	= 0x020,
+} channel_status; 
 
 typedef union
 {
 	struct
 	{
+		uint8_t	CH1_220V_flag 	:1;
+		uint8_t	CH2_220V_flag 	:1;
 		uint8_t	CH1_27V_flag 		:1;
 		uint8_t	CH2_27V_flag 		:1;
 		uint8_t	CH3_27V_flag 		:1;
 		uint8_t	CH4_27V_flag 		:1;
-		uint8_t	CH1_220V_flag 	:1;
-		uint8_t	CH2_220V_flag 	:1;
 		uint8_t dummy						:2;
 	};
 
