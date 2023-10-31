@@ -63,7 +63,7 @@ int main( void )
 while(1)
 	{
 	
-		TOOGLE_LED_GREEN();
+	//	TOOGLE_LED_GREEN();
 		Check_Voltage();
 		#ifdef __USE_DBG
 			sprintf (DBG_buffer, "status=%x\r\n",g_MyDeviceInfo.DeviceState);
